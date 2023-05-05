@@ -8,10 +8,18 @@ public class Snack11 {
 		Scanner in = new Scanner(System.in);
 		int userNum = in.nextInt();
 		
-		for(int i=0 ; i<Integer.MAX_VALUE ; i++) {
-			if(i%userNum == 0) {
+		//MAX VALUE = USERNUM
+		for(int i=0 ; i<userNum/2 ; i++) {
+			if(userNum%x == 0) {
 				System.out.println(i);
 			}
 		}
+		
+		// MAX VALUE = INTEGER.MAX_VALUE
+//		for(int i=0 ; i<Integer.MAX_VALUE ; i++) {
+//			if(i%userNum == 0) {
+//				System.out.println(i);
+//			}
+//		}
 	}
 }
