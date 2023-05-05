@@ -5,9 +5,9 @@ public class Snack3 {
 		int[] nums = {1,2,3,4,5,6};
 		int soms = 0;
 		
-		for(int i=0 ; i<nums.length ; i++) {
+		for(int i=0 ; i<nums.length ; i+=2) {
 			int num = nums[i];
-			soms = (i%2 == 0) ? soms : soms + num;
+			soms+=num;
 		}
 		
 		System.out.println(soms);
