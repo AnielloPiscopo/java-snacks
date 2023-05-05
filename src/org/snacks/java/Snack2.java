@@ -15,9 +15,10 @@ public class Snack2 {
 		int maxValue = (namesListLength > surnamesListLength) ? surnamesListLength : namesListLength;
 		
 		for(int i=0 ; i<maxValue; i++) {
-			int randomValue = rand.nextInt(maxValue);
-			String name = names[randomValue];
-			String surname = surnames[randomValue];
+			int indName = rand.nextInt(namesListLength);
+			int indSurname = rand.nextInt(surnamesListLength);
+			String name = names[indName];
+			String surname = surnames[indSurname];
 			System.out.println(name +  " " + surname);
 		}
 	}
