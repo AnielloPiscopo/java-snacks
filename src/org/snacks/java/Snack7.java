@@ -12,10 +12,10 @@ public class Snack7 {
 		do {
 			int randomNum = rand.nextInt(min , max);
 			System.out.println("Il numero casuale è: " + randomNum);
-			value=randomNum;
-			if(value%3 == 0 && value%5 == 0) {
+			if(randomNum%3 == 0 && randomNum%5 == 0) {
 				return;
 			}
+			value=randomNum;
 		}while(value%3 !=0 || value%5 !=0);
 	}
 }

@@ -18,15 +18,25 @@ public class Snack8 {
 			int randomNum = rand.nextInt(min , max);
 			System.out.println(randomNum);
 			if(randomNum%2 == 0) {
-				evenNums[evenIndex] = randomNum;
-				evenIndex++;
+				evenNums[evenIndex++] = randomNum;
 			}else {
-				oddNums[oddIndex] = randomNum;
-				oddIndex++;
+				oddNums[oddIndex++] = randomNum;
 			}
 		}
 		
-		System.out.println(Arrays.toString(evenNums));
-		System.out.println(Arrays.toString(oddNums));
+		int[] strippedEvenArr = new int[evenIndex];
+		int[] strippedOddArr = new int[oddIndex];
+		
+		for(int i=0 ; i<evenIndex ; i++) {
+			strippedEvenArr[i] = evenNums[i];
+		}
+		
+		for(int i=0 ; i<oddIndex ; i++) {
+			strippedOddArr[i] = oddNums[i];
+		}
+		
+		
+		System.out.println(Arrays.toString(strippedEvenArr));
+		System.out.println(Arrays.toString(strippedOddArr));
 	}
 }
